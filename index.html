@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/takehara-seiniku.css">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.bxslider.js"></script>
+
+
+  <title>竹原精肉店</title>
+</head>
+
+
+
+<body>
+
+  <div class="main-body">
+
+
+
+    <header id="topPage">
+
+        <!-- navbar -->
+
+            <!-- logo  -->
+            <div class="nav-container">
+                  <div class="logo-container">
+                      <div class="logo">
+                        <a href="#top" class="logo-top disable-pc"><h1 class="logo-txt">竹原精肉店</h1></a>
+                      </div>
+
+                        <ul class="logo-side">
+                          <li class="tel">tel: <a class="tel-color-sp tel-top tel-color-pc" href="tel:0776610512">0776-61-0512</a></li>
+                          <li class="hour">営業時間 10:00~19:00</li>
+                        </ul>
+                  </div>
+
+                  <nav class="navbar">
+                      <!-- navitems  -->
+                    <div class="nav-right">
+                        <div class="nav-items">
+                            <a href="#point" class="nav-item">こだわり</a>
+                            <a href="#howto" class="nav-item">調理例</a>
+                            <a href="#voice" class="nav-item">お客様の声</a>
+                            <a href="#menu" class="nav-item">メニュー</a>
+                            <a href="#map" class="nav-item">店舗情報</a>
+                            <a href="#info" class="nav-item">お知らせ</a>
+                        </div>
+                    </div>
+                  </nav>
+
+                  <nav id="nav">
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav-menu" id="manu">
+                        <li><a href="#point" class="nav-item">こだわり</a></li>
+                        <li><a href="#howto" class="nav-item">調理例</a></li>
+                        <li><a href="#voice" class="nav-item">お客様の声</a></li>
+                        <li><a href="#menu" class="nav-item">メニュー</a></li>
+                        <li><a href="#map" class="nav-item">店舗情報</a></li>
+                        <li><a href="#info" class="nav-item">お知らせ</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <!-- navbar  -->
+
+                  <div id="hamburger">
+                    <button class="navbar-toggle">
+                      <span class="inner_line" id="line1"></span>
+                      <span class="inner_line" id="line2"></span>
+                      <span class="inner_line" id="line3"></span>
+                    </button>
+                  </div>
+
+
+
+            </div>
+
+
+
+
+    </header>
+
+
+
+
+    <!-- slider  -->
+    <div id="top" class="topPage">
+
+
+      <!-- スライダー start -->
+      <ul id="slider">
+        <li class="fv1"></li>
+        <li class="fv2"></li>
+        <li class="fv3"></li>
+      </ul>
+
+      <!-- <ul id="slider" class="js-image-switch sp">
+        <li style="background-image:url(img/fv/fv1-sp.jpg);"></li>
+        <li style="background-image:url(img/fv/fv2.jpg);"></li>
+        <li style="background-image:url(img/fv/fv3.jpg);"></li>
+      </ul> -->
+
+      
+      <!-- スライダー end -->
+  
+      <script>
+  
+      $(function() {
+  
+        // bxSliderを起動
+        $('#slider').bxSlider({
+          mode: 'fade',
+          speed: 1000,
+          pause: 4500,
+          auto: true,
+          pager: true,
+          controls: true,
+          prevText: '',
+          nextText: '',
+          hideControlOnEnd: true,
+          touchEnabled: false
+        });
+  
+        // 画面リサイズ時にスライダーの幅を再設定
+        $(window).on('resize', function(){
+          var $winWidth = $(window).width();
+          $('#slider li').width($winWidth)
+        });
+      });
+  
+      </script>
+
+      
+          <img src="img/one-point/鹿児島県.png" alt="FVタイトル" class="kagoshima-intro pc">
+          <img src="img/one-point/鹿児島県_sp.png" alt="FVタイトル" class="kagoshima-intro sp">
+
+            <img src="img/one-point/ninteisyo.png" alt="認定書"
+            class="ninteisyo">  
+            <img src="img/meat/サーロインabout.png" alt="サーロイン" class="sirloin">
+      
+    </div>
+
+    
+
+
+
+
+
+
+
+    <div class="main-container">
+      
+        <p class="intro" id="intro">
+            「竹原精肉店」は福井県に開業して以来、
+            <br class="sp_parts">
+            多くのお客様にご支持いただき、
+            <br>
+            精肉店として、
+            <br class="sp_parts">
+            多くのお客様にご愛好いた抱いております。
+            <br>
+            <strong>"鹿児島黒牛 販売指定店"</strong>
+            <br class="sp_parts">
+            だからこそご提供できる、
+            <br>
+            厳選した極上肉をお召し上がりいただけます。
+        </p>
+
+
+
+        <!-- point  -->
+        <section class="point" id="point">
+          <div class="point-container">
+
+              <div class="point-top">
+                  <img src="img/meat/point_title-meat.png" alt="鹿児島黒牛" class="point-top-center">
+                  <h2 class="point-title">
+                      <img src="img/one-point/point-title.png" alt="竹原精肉店のおいしさへの３つのこだわり" class="title-img">
+                  </h2>
+              </div>
+                
+                <article class="point-01">
+                      <div class="point-txt point01-txt">
+                        <h3><img src="img/one-point/point-1.png" class="point01-01"></h3>
+                        <p>南国の温暖な気候と、澄んだ空気、滑らかな水、緑豊かな大自然と
+                        恵まれた中で大切に育てられた鹿児島黒牛。
+                        <br class="sp">
+                        サシの美しさ、キメの細かさ、
+                        <strong>とろけるような柔らかさ</strong>と、<strong>深い味わい</strong>の特選和牛。
+                        <br class="sp">
+                        肉を熟知した「竹原ブランド」だからこそご提供できる、
+                        厳選した極上肉をお召し上がりいただけます。
+                        </p>  
+                      </div>
+                      <img src="img/meat/2201453_l.jpg
+                      " alt="鹿児島黒牛について" class="point01-img02 point-img">
+                </article>
+
+                <article class="point-02">
+                      <div class="point-txt point02-txt">
+                        <h3><img src="img/one-point/point-2.png" class="point02-01"></h3>
+                        <p>当店では、プロの目利きによる厳選した肉を取り扱い、
+                          <strong>確かな品質</strong>と<strong>安全な</strong>お肉をご提供させていただいております。
+                          <br class="sp">
+                          竹原こだわりのお肉を、普段使いからギフトまで、
+                          幅広いシーンでご利用ください。
+                          <br class="sp">
+                          ショーケースには、<strong>鍛え抜かれた目利き</strong>と<strong>経験</strong>により
+                          厳選された極上肉を取り揃えております。
+                        </p>
+                      </div>
+                      <img src="img/meat/ショーケース.jpg" alt="ショーケース" class="point02-img02 point-img">
+                </article>
+
+                <article class="point-03">
+                      <div class="point-txt point03-txt">
+                        <h3><img src="img/one-point/point-3.png" alt="" class="point03-01"></h3>
+                        <p>厳選仕入れの極上肉を使用したお惣菜をご提供、
+                          お肉屋さんならではの、<strong>出来立て</strong>お惣菜が人気です。
+                          <br class="sp">
+                          ちょっとしたおやつに、夕食の一品に！主婦の心強い味方です。
+                          <br class="sp">
+                          和牛をふんだんに使って、肉汁と旨味をしっかり詰め込むように
+                          丹生込めて仕上げた外は<strong>サクサク</strong>、中は<strong>ホクホク</strong>のコロッケを
+                          ぜひ一度ご賞味ください。
+                        </p>  
+                      </div>
+                      <img src="img/meat/2999425_s.jpg" alt="コロッケ" class="point03-img02 point-img">
+                </article>
+
+                <div class="cc-inner text-center">
+                    <button class="btn-default">
+                      <a class="btn-point" href="#menus">
+                        メニューを見る
+                      </a>
+                      <img src="img/one-point/arrow.png" class="arrow" alt="">
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- point  -->
+
+
+
+
+
+        <!-- howto  -->
+        <section class="howto" id="howto">
+          <div class="howto-container" id="container">
+
+                <h2 class="howto-title">
+                  <!-- 768px未満 -->
+                  
+                    <img src="img/one-point/howto-title_sp.png" class="js-image-switch sp" style="width: 60vw;" alt="ご家庭の味をお手伝い。コクとまろやかさが加わり、ワンランク上の味わいに。">
+                  
+
+                  <!-- 768px以上 -->
+                  
+                    <img src="img/one-point/howto-title_pc.png" class="js-image-switch pc" alt="ご家庭の味をお手伝い。コクとまろやかさが加わり、ワンランク上の味わいに。">
+                  
+                </h2>
+
+                <article class="howto-item">
+                  <figure>
+                    <div class="howto-item__wrap-upper">
+                      <img src="img/meat/2685644_l.jpg" alt="すき焼き" class="howto-item_img">
+                      <img src="img/one-point/sukiyaki-bubble.png" alt="すき焼きに！" class="howto-item_bubble">
+                    </div>
+                    <figcaption class="wagyu-descrip-1">
+                      黒毛和牛は、国産牛や輸入牛より脂肪の融点が非常に低く、口にするとすぐに溶け出します。
+                      <br class="sp">非常に舌触りがよく、まろやかで肉の旨味が強調されるので、すき焼きと相性が良いです。
+                    </figcaption>
+                  </figure>
+                </article>
+
+                <article class="howto-item">
+                  <figure>
+                    <div class="howto-item__wrap-under">
+                      <img src="img/meat/601131_m.jpg" alt="ステーキ" class="howto-item_img">
+                      <img src="img/one-point/steak-bubble.png" alt="ステーキに！" class="steak-bubble">
+                    </div>
+                    <figcaption class="wagyu-descrip-2">
+                      口に入れた瞬間、上質な黒毛和牛でのみ味わうことができる
+                      独特の甘みと濃厚な旨味が口にふわっと広がります。
+                      <br class="sp">
+                      肉質はきめ細やかで、霜降りの入り方も適度でやわらかく、コク深い風味を味わえます。
+                  </figcaption>
+                      <img src="img/meat/3207972_s.png" alt="ハンバーグにもおすすめ！" class="hamburger-img">
+                      <img src="img/one-point/hamburger-bubble.png" alt="ハンバーグ" class="hamburger-bubble">
+                  </figure>
+                </article>
+
+              </div>
+        </section>
+        <!-- howto  -->
+
+
+
+
+        <!-- voice  -->
+        <section class="voice" id="voice">
+            <div class="voice-container" id="container">
+
+                  <h2 class="voice-title">
+                    お客様の声
+                    <img src="" alt class="voice-title">
+                  </h2>
+                  <img src="img/one-point/sec06_title.png" alt="" class="voice-stars">
+
+                  <ul>
+                      <li class="voice-item effect_target effect_showUP effect_delay is_on">
+                        <p>お肉！揚物！
+                          <br>
+                          <strong class="strong-bg">どれもおいしい！</strong>
+                        </p>
+                      </li>
+
+                      <li class="voice-item">
+                        <p>お肉、お惣菜
+                          <br>
+                          <strong class="strong-bg">どれもおいしいです！<br>お店の方も親切丁寧です！</strong>
+                        </p>
+                      </li>
+
+                      <li class="voice-item">
+                        <p>揚物も焼き豚も
+                          <br>
+                          <strong class="strong-bg">とても絶品でした！</strong>
+                        </p>
+                      </li>
+                  </ul>
+
+            </div>
+          <!-- voice-container  -->
+        </section>
+        <!-- voice  -->
+
+
+
+
+
+        <!-- menu  -->
+        <section class="menu" id="menu">
+            <div class="menu-container" id="container" >
+              
+                  <div class="top-menu" id="container">
+                      <h2 class="top-menu-title">
+                        毎日の食卓に、鹿児島県の上質でとろける黒毛和牛を。<br> 贈り物にも。
+                      </h2>
+
+                      <div class="content-01">
+                            <div class="content01_img">
+                              <img src="img/meat/ヒレ肉.JPG" alt="鹿児島黒牛 ヒレ肉">
+                            </div>
+                            <div class="content_info">
+                                <h3>鹿児島黒牛 ヒレ肉 (100g)</h3>
+                                <p class="content-price">
+                                  <strong>1,850円</strong>
+                                  <span>(税別)</span>
+                                </p>
+                                <p class="content-discrip">
+                                  キメが細かく大変やわらかな最高級部位です。
+                                  <br>
+                                  <strong>「肉の女王」</strong>ととも呼ばれ、肉の甘味とやわらかさが口の中に広がります。
+                                  <br>
+                                  また、脂肪分が少ないので子供からご年配の方でも食べやすく、健康志向の方にも嬉しい部位です。
+                                </p>
+                            </div>
+                      </div>
+
+                      <div class="content-02">
+                            <div class="content02_img">
+                              <img src="img/meat/menus-sirloin.jpg" alt="鹿児島黒牛 サーロイン">
+                            </div>
+                            <div class="content_info">
+                              <h3>鹿児島黒牛 サーロイン (100g)</h3>
+                              <p class="content-price">
+                                <strong>1,480円</strong>
+                                <span>(税別)</span>
+                              </p>
+                              <p class="content-discrip">
+                                キメが細かい肉質で、適度な霜降りが入っており、
+                                やわらかくうまみが濃厚な高級部位。
+                                <br>
+                                また、<strong>「ステーキの王様」</strong>と言われるほど、
+                                サーロインは最高のステーキ用の部位です。
+                              </p>
+                          </div>
+                    </div>
+
+                  </div>
+                  <!-- top-menu  -->
+
+
+                  <div class="bottom-menu" id="menus">
+
+                      <h2 class="bottom-menu-title">
+                        美味しさにこだわった竹原精肉店のメニュー
+                      </h2>
+
+                      <div class="row">
+                            <div class="menus">
+                                <h3 class="menu-title">
+                                  和牛
+                                </h3>
+                                <div class="menu-img">                            
+                                  <img src="img/meat/menus-dicesteak.png" alt="サイコロステーキ">
+                                </div>
+                                
+                                <div class="menu-descrip">
+                                      <p class="menu-descrip-title">
+                                        サイコロステーキ
+                                      </p>
+                                      <p class="menu-descrip-16">
+                                        (100g)
+                                      </p>
+                                      <div class="menu-descrip-price">
+                                        <p class="menu-descrip-red">
+                                          1,030円
+                                        </p>
+                                        <p class="menu-descrip-16 menu-descrip-bottom">
+                                          (税抜)
+                                        </p>
+                                      </div>
+                                </div>
+                                <!-- menu-descrip  -->
+
+                                
+                                <p class="each-100g">
+                                  各100g
+                                </p>
+
+                                <dl class="mini">
+                                      <dt>スジ肉</dt>
+                                      <dd>300円</dd>
+                                      <dt>牛ミックスホルモン</dt>
+                                      <dd>310円</dd>
+                                      <dt>牛挽肉</dt>
+                                      <dd>530円</dd>
+                                      <dt>切り落とし</dt>
+                                      <dd>598円</dd>
+                                      <dt>角切り</dt>
+                                      <dd>598円</dd>
+                                      <dt>肩バラスライス</dt>
+                                      <dd>788円</dd>
+                                      <dt>モモスライス</dt>
+                                      <dd>998円</dd>
+                                      <dt>ローススライス</dt>
+                                      <dd class="four"w>1,092円</dd>
+                                      <dt>しゃぶしゃぶ</dt>
+                                      <dd>843円</dd>
+                                      <dt>モモしゃぶしゃぶ</dt>
+                                      <dd>998円</dd>
+                                      <dt>ロースしゃぶしゃぶ</dt>
+                                      <dd class="four">1,092円</dd>
+                                      <dt>カルビ焼肉</dt>
+                                      <dd>850円</dd>
+                                      <dt>ロース焼肉</dt>
+                                      <dd class="four">1,050円</dd>                 
+                                </dl>
+
+                            </div>
+                            <!-- menus -->
+
+                            <div class="menus">
+                              <h3 class="menu-title">
+                                国産 豚肉
+                              </h3>
+                              <div class="menu-img">                            
+                                <img class="menu-img-pc" src="img/meat/pork_tenderloin.png" alt="国産豚ヒレ カツ用">
+                              </div>
+                              <div class="menu-descrip">
+                                    <p class="menu-descrip-title">
+                                      豚ヒレ カツ用
+                                    </p>
+                                    <p class="menu-descrip-16">
+                                      (100g)
+                                    </p>
+                                    <div class="menu-descrip-price menus-price-margin3">
+                                      <p class="menu-descrip-red">
+                                        324円
+                                      </p>
+                                      <p class="menu-descrip-16 menu-descrip-bottom">
+                                        (税抜)
+                                      </p>
+                                    </div>
+                              </div>
+                              <!-- menu-descrip  -->
+
+                              
+                              <p class="each-100g">
+                                各100g
+                              </p>
+
+                              <dl class="mini">
+                                    <dt>豚挽肉</dt>
+                                    <dd>128円</dd>
+                                    <dt>豚角切り</dt>
+                                    <dd>135円</dd>
+                                    <dt>豚並肉</dt>
+                                    <dd>145円</dd>
+                                    <dt>豚中肉</dt>
+                                    <dd>188円</dd>
+                                    <dt>豚上肉</dt>
+                                    <dd>199円</dd>
+                                    <dt>豚スペアリブ</dt>
+                                    <dd>195円</dd>
+                                    <dt>豚バラスライス</dt>
+                                    <dd>205円</dd>
+                                    <dt>豚バラ焼肉</dt>
+                                    <dd>205円</dd>
+                                    <dt>豚バラ</dt>
+                                    <dd>205円</dd>
+                                    <dt>豚みそ漬け 1枚</dt>
+                                    <dd>250円</dd>
+                                    <dt>豚ロースしゃぶ</dt>
+                                    <dd>258円</dd>
+                                    <dt>豚ロース カツ用</dt>
+                                    <dd>258円</dd>
+                                    <dt>豚生姜焼き用</dt>
+                                    <dd>258円</dd>                 
+                              </dl>
+                            </div>
+
+                            <div class="menus">
+                              <h3 class="menu-title">
+                                国産牛・鶏肉
+                              </h3>
+                              <div class="menu-img">                            
+                                <img src="img/meat/menus-gyutongue.png" alt="国産牛タン">
+                              </div>
+                              
+                              <div class="menu-descrip">
+                                    <p class="menu-descrip-title">
+                                      牛タン
+                                    </p>
+                                    <p class="menu-descrip-16">
+                                      (100g)
+                                    </p>
+                                    <div class="menu-descrip-price menus-price-margin3">
+                                      <p class="menu-descrip-red">
+                                        900円
+                                      </p>
+                                      <p class="menu-descrip-16 menu-descrip-bottom">
+                                        (税抜)
+                                      </p>
+                                    </div>
+                              </div>
+                              <!-- menu-descrip  -->
+
+                              
+                              <p class="each-100g">
+                                各100g
+                              </p>
+
+                              <dl class="mini">
+                                    <dt>牛豚合挽肉</dt>
+                                    <dd>320円</dd>
+                                    <dt>牛カルビ焼肉</dt>
+                                    <dd>650円</dd>
+                                    <dt>牛ハラミ</dt>
+                                    <dd>864円</dd>
+                                    <dt>若鶏ムネ肉</dt>
+                                    <dd class="two">84円</dd>
+                                    <dt>若鶏手羽先</dt>
+                                    <dd>105円</dd>
+                                    <dt>親鶏モモ肉</dt>
+                                    <dd>118円</dd>
+                                    <dt>若鶏挽肉</dt>
+                                    <dd>126円</dd>
+                                    <dt>若鶏モモ肉</dt>
+                                    <dd>128円</dd>
+                                    <dt>若鶏ササミ</dt>
+                                    <dd>145円</dd>
+                                    <dt>霧島鶏モモ肉</dt>
+                                    <dd>189円</dd>
+                                            
+                              </dl>
+                            </div>
+
+                            <div class="menus">
+                              <h3 class="menu-title">
+                                お惣菜
+                              </h3>
+                              <div class="menu-img">                            
+                                <img src="img/meat/menus-potato.png" alt="コロッケ">
+                              </div>
+                              
+                              <div class="menu-descrip">
+                                    <p class="menu-descrip-title">
+                                      コロッケ
+                                    </p>
+                                    <p class="menu-descrip-16">
+                                      (100g)
+                                    </p>
+                                    <div class="menu-descrip-price menus-price-margin2">
+                                      <p class="menu-descrip-red">
+                                        85円
+                                    </p>
+                                      <p class="menu-descrip-16 menu-descrip-bottom">
+                                        (税抜)
+                                      </p>
+                                    </div>
+                              </div>
+                              <!-- menu-descrip  -->
+
+                              
+                              <p class="each-100g">
+                                各100g
+                              </p>
+
+                              <dl class="mini">
+                                    <dt>チキンカツ</dt>
+                                    <dd class="two">60円</dd>
+                                    <dt>フランク</dt>
+                                    <dd class="two">65円</dd>
+                                    <dt>からあげ</dt>
+                                    <dd class="two">70円</dd>
+                                    <dt>手羽先</dt>
+                                    <dd class="two">75円</dd>
+                                    <dt>串カツ</dt>
+                                    <dd class="two">80円</dd>
+                                    <dt>ヒレカツ</dt>
+                                    <dd>120円</dd>
+                                    <dt>ミンチカツ</dt>
+                                    <dd>125円</dd>
+                                    <dt>ハムチーズ</dt>
+                                    <dd>125円</dd>         
+                                    <dt>とんかつ</dt>
+                                    <dd>350円</dd>      
+                              </dl>
+                            </div>
+                            <!-- menus -->
+
+                      </div>
+                      <!-- row -->
+
+                  </div>
+                  <!-- bottom-menu -->
+
+
+
+                  
+              
+
+
+            </div>
+            <!-- menu-container  -->
+        </section>
+        <!-- menu  -->
+
+
+
+
+        <!-- store_info  -->
+        <section class="store_info" id="map">
+
+              <div class="store_info-container">
+
+
+                    <div class="store">
+                          <h2 class="store-title">
+                            店舗情報
+                          </h2>
+                      
+                          <p class="store-name">有限会社 竹原精肉店</p>
+                          <p class="store-text">
+                          〒910-1133 福井県吉田郡永平寺町松岡春日2丁目79
+                          <br>
+                          TEL<a class="tel-color-sp tel-color-pc" href="tel:0776610512"> 0776-61-0512</a>
+                          <br>
+                          営業時間 10:00~19:00
+                          <br>
+                          定休日 日曜日
+                          </p>
+                        <div class="google-map">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12896.491811475127!2d136.28822203403953!3d36.09049072136333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff89596db6479e1%3A0xb27470f35219f6d8!2z56u55Y6f57K-6IKJ5bqX!5e0!3m2!1sja!2sjp!4v1607665919056!5m2!1sja!2sjp" width="1080" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        
+                    </div>
+                    <!-- store  -->
+
+
+
+                
+                        <!-- 最新情報、ニュース -->
+                        <div class="news" id="put-center">
+                          <div class="inner" id="info">
+                                <h3 class="news__ttl" ><a href="">お知らせ</a></h3>
+                                  <ul class="news-list">
+
+                                          <li class="news-list__item">
+                                                  <time class="news-list__date">
+                                                      2020.9.29
+                                                  </time>
+                                                  <span class="news-list-txt">
+                                                    <a href="" class="news-list__link">テキストテキストテキストテキストテキストテキストテキストテキスト
+                                                      <i class="news-list__icn">→</i>
+                                                    </a>
+                                                  </span>
+                                          </li>
+
+                                          <li class="news-list__item">
+                                            <time class="news-list__date">
+                                                2020.9.29
+                                            </time>
+                                            <span class="news-list-txt">
+                                              <a href="" class="news-list__link">テキストテキストテキストテキストテキストテキストテキストテキスト
+                                                <i class="news-list__icn">→</i>
+                                              </a>
+                                            </span>
+                                         </li>
+
+                                          <li class="news-list__item">
+                                            <time class="news-list__date">
+                                                  2020.9.29
+                                              </time>
+                                              <span class="news-list-txt">
+                                                <a href="" class="news-list__link">テキストテキストテキストテキストテキストテキストテキストテキスト
+                                                  <i class="news-list__icn">→</i>
+                                                </a>
+                                              </span>
+                                          </li>
+
+                                          <li class="news-list__item">
+                                                <time class="news-list__date">
+                                                    2020.9.29
+                                                </time>
+                                                <span class="news-list-txt">
+                                                  <a href="" class="news-list__link">テキストテキストテキストテキストテキストテキストテキストテキスト
+                                                    <i class="news-list__icn">→</i>
+                                                  </a>
+                                                </span>
+                                          </li>
+
+                                  </ul>
+                                  <!-- news-list  -->
+
+
+                          </div>
+                          <!-- info-content -->
+
+                        </div>
+                      <!-- info  -->
+
+
+              </div>
+              <!-- store_info-container  -->
+              
+        </section>
+        <!-- store_info  -->
+
+
+
+
+    </div>
+    <!-- main-container  -->
+
+
+    <!-- footer  -->
+    <footer>
+      <a href="#topPage" class="disable-sp">
+        <div class="footer-pageTop pc">
+          <div class="arrow2 pc">
+        </div>
+      </div>
+      </a>
+
+      <a href="#top" class="disable-pc">
+        <div class="footer-pageTop sp">
+            <div class="arrow2 sp">
+          </div>
+        </div>
+      </a>
+      <p class="page-right">(有)竹原精肉店. All Right Reserved.</p>
+    </footer>
+
+  </div>
+  <!-- main-body  -->
+  
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/switch.js"></script>
+  <script src="./js/ease-scroll.js"></script>
+
+</body>
+</html>
